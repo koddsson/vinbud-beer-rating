@@ -3,27 +3,27 @@
     "version": "0.3",
     "name": "Github Emjois",
     "web_accessible_resources": [
-        "emojis.json",
-        "bower_components/jquery-textcomplete/media/fonts/*",
-        "bower_components/jquery-textcomplete/media/images/*",
-        "bower_components/jquery-textcomplete/jquery.textcomplete.min.map",
-        "bower_components/underscore/underscore-min.map",
-        "bower_components/jquery/dist/jquery.min.map"
+        "github-emojis/emojis.json",
+        "github-emojis/bower_components/jquery-textcomplete/media/fonts/*",
+        "github-emojis/bower_components/jquery-textcomplete/media/images/*",
+        "github-emojis/bower_components/jquery-textcomplete/jquery.textcomplete.min.map",
+        "github-emojis/bower_components/underscore/underscore-min.map",
+        "github-emojis/bower_components/jquery/dist/jquery.min.map"
     ],
     "content_scripts": [
         {
             "matches": ["*://*.github.com/*"],
             "css": [
-                "bower_components/jquery-textcomplete/jquery.textcomplete.css",
-                "bower_components/jquery-textcomplete/media/stylesheets/main.css",
-                "style.css"
+                "github-emojis/bower_components/jquery-textcomplete/jquery.textcomplete.css",
+                "github-emojis/bower_components/jquery-textcomplete/media/stylesheets/main.css",
+                "github-emojis/style.css"
             ],
             "js": [
-                "bower_components/jquery/dist/jquery.min.js",
-                "bower_components/underscore/underscore-min.js",
-                "bower_components/jquery-textcomplete/jquery.textcomplete.min.js",
-                "bower_components/jquery-textcomplete/media/javascripts/emoji.js",
-                "script.js"
+                "github-emojis/bower_components/jquery/dist/jquery.min.js",
+                "github-emojis/bower_components/underscore/underscore-min.js",
+                "github-emojis/bower_components/jquery-textcomplete/jquery.textcomplete.min.js",
+                "github-emojis/bower_components/jquery-textcomplete/media/javascripts/emoji.js",
+                "github-emojis/script.js"
             ]
         }
     ]
