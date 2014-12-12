@@ -1,5 +1,5 @@
-Github Emoji searcher
-=====================
+Github Emoji fuzzy finder
+=========================
 
 A Chrome extension that searches through the descriptions of emojis made by
 @muan in [this search engine](https://github.com/muan/emoji/).
@@ -21,9 +21,17 @@ or
 4. ?????
 5. Profit.
 
-TODO
-----
+Hacking on this
+===============
 
-- ~~Pack the extension and release on the web store.~~
-- Clean up console warnings.
-- Clean up code
+Clone the repo with submodules
+
+`git clone --recursive git@github.com:koddsson/github-emojis-chrome.git`
+
+Change into the `github-emojis` submodule and install bower requirements.
+
+`cd github-emojis-chrome/github-emojis && bower install`
+
+Now you can load the extension in Chrome and hack on it to add a feature or
+fix a bug. If you do any changes to the submodule make sure that you submit
+that to the `github-emojis` project as a separate PR.
