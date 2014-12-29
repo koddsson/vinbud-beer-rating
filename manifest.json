@@ -4,9 +4,7 @@
     "name": "Github Emjois",
     "web_accessible_resources": [
         "github-emojis/emojis.json",
-        "github-emojis/bower_components/jquery-textcomplete/media/fonts/*",
-        "github-emojis/bower_components/jquery-textcomplete/media/images/*",
-        "github-emojis/bower_components/jquery-textcomplete/jquery.textcomplete.min.map",
+        "github-emojis/bower_components/jquery-textcomplete/dist/jquery.textcomplete.min.map",
         "github-emojis/bower_components/underscore/underscore-min.map",
         "github-emojis/bower_components/jquery/dist/jquery.min.map"
     ],
@@ -14,15 +12,13 @@
         {
             "matches": ["*://*.github.com/*"],
             "css": [
-                "github-emojis/bower_components/jquery-textcomplete/jquery.textcomplete.css",
-                "github-emojis/bower_components/jquery-textcomplete/media/stylesheets/main.css",
+                "github-emojis/bower_components/jquery-textcomplete/dist/jquery.textcomplete.css",
                 "github-emojis/style.css"
             ],
             "js": [
                 "github-emojis/bower_components/jquery/dist/jquery.min.js",
                 "github-emojis/bower_components/underscore/underscore-min.js",
-                "github-emojis/bower_components/jquery-textcomplete/jquery.textcomplete.min.js",
-                "github-emojis/bower_components/jquery-textcomplete/media/javascripts/emoji.js",
+                "github-emojis/bower_components/jquery-textcomplete/dist/jquery.textcomplete.min.js",
                 "github-emojis/script.js"
             ]
         }
