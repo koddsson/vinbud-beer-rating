@@ -1,6 +1,6 @@
 {
     "manifest_version": 2,
-    "version": "0.3",
+    "version": "0.4",
     "name": "Github Emjois",
     "web_accessible_resources": [
         "github-emojis/emojis.json",
