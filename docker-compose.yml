@@ -1,0 +1,10 @@
+couchdb:
+  volumes:
+    - ./couchdb/:/usr/local/var/lib/couchdb
+  image: klaemo/couchdb
+api:
+  build: .
+  ports:
+    - "3000:3000"
+  links:
+    - couchdb

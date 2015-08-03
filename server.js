@@ -6,7 +6,22 @@ var cradle = require('cradle');
 
 var Promise = require('es6-promises');
 
-var db = new(cradle.Connection)().database('vinbudin');
+var COUCHDB_ADDR = process.env.COUCHDB_PORT_5984_TCP_ADDR;
+
+var db = new(cradle.Connection)(COUCHDB_ADDR).database('vinbudin');
+
+db.exists(function(err, exists) {
+  console.log('Checking if DB exists');
+  if (err) {
+    throw err;
+  } else if (exists) {
+    console.log('DB exists');
+  } else if (!exists) {
+    console.log('Creating DB');
+    db.create();
+  }
+});
+
 var app = express();
 
 app.use(cors());
