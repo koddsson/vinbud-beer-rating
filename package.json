@@ -1,0 +1,21 @@
+{
+  "name": "vinbud-rating",
+  "version": "1.0.0",
+  "description": "Github Emoji fuzzy finder =========================",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^0.19.0",
+    "cors": "^2.7.1",
+    "cradle": "^0.6.9",
+    "es6-promises": "^1.0.10",
+    "express": "^4.13.3",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.2.0",
+    "request": "^2.60.0"
+  }
+}

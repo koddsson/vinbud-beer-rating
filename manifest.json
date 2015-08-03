@@ -1,25 +1,13 @@
 {
     "manifest_version": 2,
-    "version": "0.4",
-    "name": "Github Emjois",
-    "web_accessible_resources": [
-        "github-emojis/emojis.json",
-        "github-emojis/bower_components/jquery-textcomplete/dist/jquery.textcomplete.min.map",
-        "github-emojis/bower_components/underscore/underscore-min.map",
-        "github-emojis/bower_components/jquery/dist/jquery.min.map"
-    ],
+    "version": "0.1",
+    "name": "Vinbud Rating",
     "content_scripts": [
         {
-            "matches": ["*://*.github.com/*"],
-            "css": [
-                "github-emojis/bower_components/jquery-textcomplete/dist/jquery.textcomplete.css",
-                "github-emojis/style.css"
-            ],
+            "matches": ["*://*.vinbudin.is/*"],
+            "css": [],
             "js": [
-                "github-emojis/bower_components/jquery/dist/jquery.min.js",
-                "github-emojis/bower_components/underscore/underscore-min.js",
-                "github-emojis/bower_components/jquery-textcomplete/dist/jquery.textcomplete.min.js",
-                "github-emojis/script.js"
+                "dist/index.js"
             ]
         }
     ]
